@@ -12,8 +12,8 @@ jobs:
 
       - name: Install dependencies and build
         run: |
-          chmod +x ./ci_dependency_setup.sh
-          ./ci_dependency_setup.sh
+          chmod +x ./Task\ 1/ci_dependency_setup.sh
+          ./Task\ 1/ci_dependency_setup.sh
         env:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
           DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
@@ -24,8 +24,8 @@ jobs:
     steps:
       - name: Deploy to server
         run: |
-          chmod +x ./cd_deploy.sh
-          ./cd_deploy.sh
+          chmod +x ./Task\ 1/cd_deploy.sh
+          ./Task\ 1/cd_deploy.sh
         env:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
           DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
