@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-docker login -u $anishchengre -p $CLB26C70BB
+docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
 docker pull anishdchengre/django-app:latest
 
 # Stop existing container

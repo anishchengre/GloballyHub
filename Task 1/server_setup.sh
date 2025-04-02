@@ -1,5 +1,5 @@
 #!/bin/bash
-set -euo pipefall #Exit on error, undefined variables, and pipelline features
+set -euo pipefail #Exit on error, undefined variables, and pipelline features
 
 
 if ! command -v docker &> /dev/null; then
