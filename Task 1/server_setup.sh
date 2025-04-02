@@ -25,4 +25,5 @@ if ! command -v nginx &> /dev/null; then
     sudo systemctl enable nginx
 else
     echo "Nginx already installed."
-fi
+fi  
+sudo systemctl restart nginx
